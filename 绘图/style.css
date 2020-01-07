@@ -1,0 +1,37 @@
+/*
+* @Author: chenyi
+* @Date:   2019-09-04 15:30:07
+* @Last Modified by:   chenyi
+* @Last Modified time: 2019-09-04 17:03:16
+*/
+
+#myCanvas {
+	width:900px;
+	height:300px;
+	border:1px solid #ddd;
+	box-shadow:2px 2px 3px #666;
+}
+
+
+.main-content {
+	display:flex;
+}
+
+.colors {
+	width: 200px;
+	height: 500px;
+	border:1px solid #ddd;
+}
+
+.color{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+}
+
+
+.color.active{
+	box-shadow:1px 1px 2px #09f;
+}

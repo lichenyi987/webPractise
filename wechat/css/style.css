@@ -1,0 +1,173 @@
+/*
+* @Author: chenyi
+* @Date:   2019-09-04 10:18:33
+* @Last Modified by:   chenyi
+* @Last Modified time: 2019-09-04 15:01:03
+*/
+/* em 是字体的倍数 */
+
+body{
+	margin:0;
+}
+
+.page-header{
+	overflow: auto;
+	background: #efefef;
+	padding:1em 0.5em;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:99;
+}
+
+
+.page-header > h1{
+	margin:0;
+	float:left;
+	font-size:1em;
+
+}
+
+.page-header > .opt-box{
+	float:right;
+
+}
+
+
+.opt-box > img{
+	width:1.2em;
+	height:1.2em;
+}
+
+
+.page-footer {
+	/* box-sizing在计算的时候包括内边距 */
+	box-sizing:border-box;
+	padding:1em 0.5em;
+	display:flex;
+	justify-content: space-between;
+	/* 固定定位在页面的某个位置，会脱离文档流 */
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	background: #efefef;
+
+}
+
+.page-footer > .nav-btn{
+	/* border:1px solid red; */
+	padding-top: 1.2em;
+}
+
+
+.page-footer > .nav-btn label{
+	font-size:12px;
+}
+
+.page-footer > .nav-btn.wechat{
+	background: url('../image/wechat.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+	margin-left: 0.5em;
+}
+
+
+.page-footer > .nav-btn.tongxun{
+	background: url('../image/tongxun.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+}
+
+
+.page-footer > .nav-btn.find{
+	background: url('../image/find.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+}
+
+.page-footer > .nav-btn.me{
+	background: url('../image/me.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+	margin-right: 1em;
+}
+
+/* ******************激活状态******************** */
+
+.page-footer > .nav-btn.wechat.active{
+	background: url('../image/wechat_active.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+	margin-left: 0.5em;
+}
+
+
+.page-footer > .nav-btn.tongxun.active{
+	background: url('../image/tongxun_active.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+}
+
+
+.page-footer > .nav-btn.find.active{
+	background: url('../image/find_active.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+}
+
+.page-footer > .nav-btn.me.active{
+	background: url('../image/me_active.png') no-repeat;
+	background-size:1em 1em;
+	background-position:50% 10%;
+	margin-right: 1em;
+}
+
+
+
+.page-footer > .nav-btn.active label{
+	color: green;
+}
+
+
+
+/* *******************好友列表****************************** */
+.friend-list{
+	margin-top: 56px;
+	margin-bottom: 66px;
+}
+
+.friend-list .friend-item{
+	position:relative;
+	padding:0.5em 72px;
+
+}
+
+.friend-item > img {
+	width:60px;
+	height:60px;
+	position:absolute;
+	left:0.5em;
+	top:0.5em;
+}
+
+.friend-item > .time{
+	width:6em;
+	font-size:12px;
+	color: #666;
+	position:absolute;
+	right:0.5em;
+	top:0.5em;
+}
+
+.friend-item > .info h1{
+	margin:0;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.friend-item > .info p{
+	margin:0.5em 0;
+	font-size:0.8em;
+}
